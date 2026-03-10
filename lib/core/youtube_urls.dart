@@ -9,8 +9,7 @@ class YoutubeUrls {
   // Primary navigation
   static const String home = 'https://m.youtube.com/';
   static const String shorts = 'https://m.youtube.com/shorts';
-  static const String subscriptions =
-      'https://m.youtube.com/feed/subscriptions';
+  static const String subscriptions = 'https://m.youtube.com/feed/subscriptions';
   static const String explore = 'https://m.youtube.com/feed/explore';
   static const String trending = 'https://m.youtube.com/feed/trending';
 
