@@ -78,7 +78,8 @@ class _HomeScreensState extends State<HomeScreens> {
         YoutubeNavTile(
           icon: Icons.subscriptions,
           label: "Subscriptions",
-          onTap: () => _openUrl(AppStrings.navSubscriptions, YoutubeUrls.subscriptions),
+          onTap: () =>
+              _openUrl(AppStrings.navSubscriptions, YoutubeUrls.subscriptions),
         ),
         YoutubeNavTile(icon: Icons.explore, label: "Explore", onTap: () {}),
         YoutubeNavTile(
@@ -90,24 +91,35 @@ class _HomeScreensState extends State<HomeScreens> {
         Divider(color: AppColors.divider, height: 1, indent: 15, endIndent: 15),
         _buildSectionHeader(AppStrings.sectionLibrary),
 
-        YoutubeNavTile(icon: Icons.history, label: "History",
-            onTap: () => _openUrl(AppStrings.navHistory, YoutubeUrls.history)),
+        YoutubeNavTile(
+          icon: Icons.history,
+          label: "History",
+          onTap: () => _openUrl(AppStrings.navHistory, YoutubeUrls.history),
+        ),
         YoutubeNavTile(
           icon: Icons.watch_later_outlined,
           label: "Watch Later",
-          onTap: () => _openUrl(AppStrings.navWatchLater, YoutubeUrls.watchLater),
+          onTap: () =>
+              _openUrl(AppStrings.navWatchLater, YoutubeUrls.watchLater),
         ),
         YoutubeNavTile(
           icon: Icons.thumb_up_alt_outlined,
           label: "Liked Video",
-          onTap: () => _openUrl(AppStrings.navLikedVideos, YoutubeUrls.likedVideos),
+          onTap: () =>
+              _openUrl(AppStrings.navLikedVideos, YoutubeUrls.likedVideos),
         ),
         Divider(color: AppColors.divider, height: 1, indent: 15, endIndent: 15),
         _buildSectionHeader(AppStrings.sectionMore),
-        YoutubeNavTile(icon: Icons.settings, label: "Settings",
-            onTap: () => _openUrl(AppStrings.navSettings, YoutubeUrls.settings)),
-        YoutubeNavTile(icon: Icons.help, label: "Help",
-            onTap: () => _openUrl(AppStrings.navHelp, YoutubeUrls.help)),
+        YoutubeNavTile(
+          icon: Icons.settings,
+          label: "Settings",
+          onTap: () => _openUrl(AppStrings.navSettings, YoutubeUrls.settings),
+        ),
+        YoutubeNavTile(
+          icon: Icons.help,
+          label: "Help",
+          onTap: () => _openUrl(AppStrings.navHelp, YoutubeUrls.help),
+        ),
       ],
     );
   }
