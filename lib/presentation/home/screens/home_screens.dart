@@ -81,7 +81,11 @@ class _HomeScreensState extends State<HomeScreens> {
           onTap: () =>
               _openUrl(AppStrings.navSubscriptions, YoutubeUrls.subscriptions),
         ),
-        YoutubeNavTile(icon: Icons.explore, label: "Explore", onTap: () {}),
+        YoutubeNavTile(
+          icon: Icons.explore,
+          label: "Explore",
+          onTap: () => _openUrl(AppStrings.navExplore, YoutubeUrls.explore),
+        ),
         YoutubeNavTile(
           icon: Icons.trending_up,
           label: "Trending",
